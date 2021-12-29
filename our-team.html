@@ -116,192 +116,84 @@
 
 <!-- ------------------------------------------------------------------------------------------ -->
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-
-.row {
-  justify-content: center;
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-<!-- ------------------------------------------------------------------------------------------------------------------ -->
 * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
-
-body {
-  margin: 0;
+h1 {
+text-align: center;
 }
-
-.header {
-  text-align: center;
-  padding: 32px;
+.outer-grid {
+justify-content: center;
+display: flex;
+flex-wrap: wrap;
+padding: 0 4px;
 }
-
-.row {
-  display: -ms-flexbox; /* IE 10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE 10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
+.inner-grid {
+flex: 25%;
+max-width: 25%;
+padding: 0 4px;
 }
-
-/* Create two equal columns that sits next to each other */
-.column {
-  -ms-flex: 50%; /* IE 10 */
-  flex: 50%;
-  padding: 0 4px;
+.inner-grid img {
+margin-top: 8px;
+width: 100%;
+padding: 1px;
 }
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
+@media screen and (max-width: 800px) {
+.inner-grid {
+flex: 50%;
+max-width: 50%;
 }
-
+}
+@media screen and (max-width: 400px) {
+.inner-grid {
+flex: 100%;
+max-width: 100%;
+}
+}
 </style>
-</head>
-<body>
+<div class="container">
+ <center><h2><i>"Talent wins games, but teamwork and intelligence win championships."</i></h2></center>
+<div class="outer-grid">
+<div class="inner-grid">
+<img src="assets/images/team/sarthak.jpg" alt="Dr. Sarthak Patnaik">
 
-<!-- Header -->
-<div class="header" id="myHeader">
-  <h2><i>"Talent wins games, but teamwork and intelligence win championships."</i></h2>
 </div>
-
-<!-- Photo Grid -->
-  <div class="container">
-<div class="row">
-  <div class="column">
-    <img src="assets/images/team/sarthak.jpg" alt="Dr. Sarthak Patnaik">
-  </div>
-  <div class="column">
-    <img src="assets/images/team/soumya.jpg" alt="Soumya Patnaik">
-  </div>  
-  <div class="column">
-    <img src="assets/images/team/nisha.jpg" alt="Nisha Kaushik Patnaik">
-  </div>
+<div class="inner-grid">
+ <img src="assets/images/team/soumya.jpg" alt="Soumya Patnaik">
+</div>
+<div class="inner-grid">
+<img src="assets/images/team/nisha.jpg" alt="Nisha Kaushik Patnaik">
+</div>
+</div>
+<hr>
+<div class="outer-grid">
+<div class="inner-grid">
+<img src="assets/images/team/jay.jpg" alt="Dr. Jay Sharma">
+</div>
+<div class="inner-grid">
+ <img src="assets/images/team/gayatri.jpg" alt="Dr.Gayatri Upasana Archarya">
+</div>
+<div class="inner-grid">
+<img src="assets/images/team/vinnel.jpg" alt="Dr.P.N Vinnel Kumar">
+</div>
+<div class="inner-grid">
+<img src="assets/images/team/rajat.jpg" alt="Dr. Rajat Kumar Pradhan">
+</div>
+</div>
+<div class="outer-grid">
+<div class="inner-grid">
+<img src="assets/images/team/chetena.jpg" alt="Dr.Chetana Mayee Padhan">
+</div>
+<div class="inner-grid">
+<img src="assets/images/team/sucharita.jpg" alt="Dr.Sucharita Swain">
+</div>
+<div class="inner-grid">
+<img src="assets/images/team/angel.jpg" alt="Dr.Angel Nag">
+</div>
 </div>
 <hr>
 </div>
-
-<div class="container">
-<div class="row"> 
-  <div class="column">
-    <img src="assets/images/team/jay.jpg" alt="Dr. Jay Sharma">
-  </div>
-  <div class="column">
-    <img src="assets/images/team/gayatri.jpg" alt="Dr.Gayatri Upasana Archarya">
-  </div>  
-  <div class="column">
-    <img src="assets/images/team/vinnel.jpg" alt="Dr.P.N Vinnel Kumar">
-  </div>
-  <div class="column">
-    <img src="assets/images/team/rajat.jpg" alt="Dr. Rajat Kumar Pradhan">
-  </div>
-</div>
-</div>
-
-<div class="container">
-<div class="row"> 
-  <div class="column">
-    <img src="assets/images/team/chetena.jpg" alt="Dr.Chetana Mayee Padhan">
-  </div>
-  <div class="column">
-    <img src="assets/images/team/sucharita.jpg" alt="Dr.Sucharita Swain">
-  </div>  
-  <div class="column">
-    <img src="assets/images/team/angel.jpg" alt="Dr.Angel Nag">
-  </div>
-  <div class="column">
-    <img src="assets/images/team/somesh.jpg" alt="Dr.Somesh Ranjan Panda">
-  </div>
-</div>
-<hr>
-</div>
-
-<script>
-// Get the elements with class="column"
-var elements = document.getElementsByClassName("column");
-
-// Declare a loop variable
-var i;
-
-// Full-width images
-function one() {
-    for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "100%";  // IE10
-    elements[i].style.flex = "100%";
-  }
-}
-
-// Two images side by side
-function two() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "50%";  // IE10
-    elements[i].style.flex = "50%";
-  }
-}
-
-// Four images side by side
-function four() {
-  for (i = 0; i < elements.length; i++) {
-    elements[i].style.msFlex = "25%";  // IE10
-    elements[i].style.flex = "25%";
-  }
-}
-
-// Add active class to the current button (highlight it)
-var header = document.getElementById("myHeader");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-
-</body>
-</html>
-
 <!-- ------------------------------------------------------------------------------------------- -->
 
         <!-- start cta-section -->
